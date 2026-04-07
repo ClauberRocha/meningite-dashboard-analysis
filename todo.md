@@ -23,6 +23,9 @@
 - [x] Adicionadas regionais (Itapecuru, Zé Doca, Caxias) ao mapa de calor
 - [x] Removidas regiões com zero casos do mapa de calor
 - [x] Atualizada Distribuição de Casos Confirmados por Regionais com novas regionais
+- [x] Adicionada faixa etária 61 a 70 anos (1 caso) ao filtro de faixa etária
+- [x] Adicionada faixa etária 61 a 70 anos ao gráfico de Casos Confirmados por Faixa Etária
+- [x] Ajustados valores de sexo e raça/cor para refletir novo total de 19 casos
 
 ## Arquivos Modificados
 

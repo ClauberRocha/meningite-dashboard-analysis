@@ -160,6 +160,16 @@ export default function Home() {
               >
                 51 a 60 anos
               </button>
+              <button
+                onClick={() => setAgeGroup("61-70")}
+                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                  ageGroup === "61-70"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
+              >
+                61 a 70 anos
+              </button>
             </div>
           </div>
           
@@ -185,6 +195,7 @@ export default function Home() {
                 { name: "21 a 30 anos", value: 1 },
                 { name: "41 a 50 anos", value: 3 },
                 { name: "51 a 60 anos", value: 1 },
+                { name: "61 a 70 anos", value: 1 },
               ]}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />

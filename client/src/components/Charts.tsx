@@ -22,8 +22,8 @@ import { useState } from "react";
 export function DemographicSexChart({ ageGroup = "all" }: { ageGroup?: string }) {
   const ageGroupData: Record<string, any[]> = {
     all: [
-      { name: "Masculino", value: 10, percentage: 55.6 },
-      { name: "Feminino", value: 8, percentage: 44.4 },
+      { name: "Masculino", value: 11, percentage: 57.9 },
+      { name: "Feminino", value: 8, percentage: 42.1 },
     ],
     "0-1": [
       { name: "Masculino", value: 4, percentage: 66.7 },
@@ -46,6 +46,10 @@ export function DemographicSexChart({ ageGroup = "all" }: { ageGroup?: string })
       { name: "Feminino", value: 1, percentage: 50 },
     ],
     "51-60": [
+      { name: "Masculino", value: 1, percentage: 100 },
+      { name: "Feminino", value: 0, percentage: 0 },
+    ],
+    "61-70": [
       { name: "Masculino", value: 1, percentage: 100 },
       { name: "Feminino", value: 0, percentage: 0 },
     ],
@@ -115,9 +119,9 @@ export function DemographicSexChart({ ageGroup = "all" }: { ageGroup?: string })
 export function DemographicRaceChart({ ageGroup = "all" }: { ageGroup?: string }) {
   const ageGroupData: Record<string, any[]> = {
     all: [
-      { name: "Parda", value: 16, percentage: 88.9 },
-      { name: "Branca", value: 1, percentage: 5.6 },
-      { name: "Indígena", value: 1, percentage: 5.6 },
+      { name: "Parda", value: 17, percentage: 89.5 },
+      { name: "Branca", value: 1, percentage: 5.3 },
+      { name: "Indígena", value: 1, percentage: 5.3 },
     ],
     "0-1": [
       { name: "Parda", value: 6, percentage: 100 },
@@ -145,6 +149,11 @@ export function DemographicRaceChart({ ageGroup = "all" }: { ageGroup?: string }
       { name: "Indígena", value: 0, percentage: 0 },
     ],
     "51-60": [
+      { name: "Parda", value: 1, percentage: 100 },
+      { name: "Branca", value: 0, percentage: 0 },
+      { name: "Indígena", value: 0, percentage: 0 },
+    ],
+    "61-70": [
       { name: "Parda", value: 1, percentage: 100 },
       { name: "Branca", value: 0, percentage: 0 },
       { name: "Indígena", value: 0, percentage: 0 },
