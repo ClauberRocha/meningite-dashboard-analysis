@@ -20,6 +20,9 @@
 - [x] Gráfico de Distribuição por Município com nomes capitalizados
 - [x] Mapa de Calor com cores ajustadas
 - [x] Gráfico de Semana Epidemiológica com labels de quantidade
+- [x] Adicionadas regionais (Itapecuru, Zé Doca, Caxias) ao mapa de calor
+- [x] Removidas regiões com zero casos do mapa de calor
+- [x] Atualizada Distribuição de Casos Confirmados por Regionais com novas regionais
 
 ## Arquivos Modificados
 

@@ -325,11 +325,14 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Por Regionais</h3>
               <div className="space-y-3">
                 {[
-                  { name: "Metropolitana", value: 10, percentage: 56 },
-                  { name: "Bacabal", value: 2, percentage: 11 },
-                  { name: "Rosário", value: 1, percentage: 6 },
-                  { name: "Viana", value: 1, percentage: 6 },
-                  { name: "Imperatriz", value: 1, percentage: 6 },
+                  { name: "Metropolitana", value: 10, percentage: 50 },
+                  { name: "Bacabal", value: 2, percentage: 10 },
+                  { name: "Rosário", value: 1, percentage: 5 },
+                  { name: "Viana", value: 1, percentage: 5 },
+                  { name: "Imperatriz", value: 1, percentage: 5 },
+                  { name: "Itapecuru", value: 1, percentage: 5 },
+                  { name: "Zé Doca", value: 1, percentage: 5 },
+                  { name: "Caxias", value: 1, percentage: 5 },
                 ].map((item) => (
                   <div key={item.name}>
                     <div className="flex justify-between mb-2">
@@ -408,10 +411,10 @@ export default function Home() {
               { name: "Rosário", value: 1, max: 10 },
               { name: "Viana", value: 1, max: 10 },
               { name: "Imperatriz", value: 1, max: 10 },
-              { name: "Santa Inês", value: 0, max: 10 },
-              { name: "Presidente Dutra", value: 0, max: 10 },
-              { name: "Balsas", value: 0, max: 10 },
-            ].map((region) => {
+              { name: "Itapecuru", value: 1, max: 10 },
+              { name: "Zé Doca", value: 1, max: 10 },
+              { name: "Caxias", value: 1, max: 10 },
+            ].filter((region) => region.value > 0).map((region) => {
               let bgColor, textColor;
               if (region.name === 'Metropolitana') {
                 bgColor = 'bg-red-600';
@@ -438,7 +441,7 @@ export default function Home() {
             })}
           </div>
           <p className="text-gray-600 text-sm mt-6">
-            <strong>Legenda:</strong> O mapa de calor mostra a intensidade de casos confirmados por regional. Vermelho indica a maior concentração (Metropolitana com 10 casos - 55,6%), laranja claro indica outras regiões com casos confirmados, e cinza indica regiões sem casos. Bacabal apresenta 2 casos (11,1%), enquanto Rosário, Viana e Imperatriz apresentam 1 caso cada.
+            <strong>Legenda:</strong> O mapa de calor mostra a intensidade de casos confirmados por regional. Vermelho indica a maior concentração (Metropolitana com 10 casos - 55,6%), laranja claro indica outras regiões com casos confirmados. Bacabal apresenta 2 casos (11,1%), enquanto Rosário, Viana, Imperatriz, Itapecuru, Zé Doca e Caxias apresentam 1 caso cada (5,6% cada).
           </p>
         </div>
 
