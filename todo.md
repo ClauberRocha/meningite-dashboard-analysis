@@ -26,6 +26,8 @@
 - [x] Adicionada faixa etária 61 a 70 anos (1 caso) ao filtro de faixa etária
 - [x] Adicionada faixa etária 61 a 70 anos ao gráfico de Casos Confirmados por Faixa Etária
 - [x] Ajustados valores de sexo e raça/cor para refletir novo total de 19 casos
+- [x] Adicionado card informativo abaixo do gráfico Por Sexo (cor #EEF6FE)
+- [x] Adicionado card informativo abaixo do gráfico Por Raça/Cor (cor #FFFBEC)
 
 ## Arquivos Modificados
 

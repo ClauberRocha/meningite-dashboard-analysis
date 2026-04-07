@@ -177,10 +177,20 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Por Sexo</h3>
               <DemographicSexChart ageGroup={ageGroup} />
+              <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: "#EEF6FE" }}>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong>Análise:</strong> Leve predominância masculina (55,6% vs 44,4%). Distribuição equilibrada, consistente com o perfil epidemiológico da doença.
+                </p>
+              </div>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Por Raça/Cor</h3>
               <DemographicRaceChart ageGroup={ageGroup} />
+              <div className="mt-6 p-4 rounded-lg" style={{ backgroundColor: "#FFFBEC" }}>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  <strong>Análise:</strong> Expressiva predominância de indivíduos pardos (88,9%), refletindo o perfil étnico-racial da população maranhense.
+                </p>
+              </div>
             </div>
           </div>
           
