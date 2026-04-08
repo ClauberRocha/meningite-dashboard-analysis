@@ -603,6 +603,131 @@ export default function Home() {
           })()}
         </div>
 
+        {/* Seção de Alertas e Recomendações */}
+        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Alertas e Recomendações de Saúde Pública</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Alerta 1: Faixa Etária */}
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-600 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">🚨</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-red-900 mb-2">Concentração em Crianças Pequenas</h3>
+                  <p className="text-red-800 text-sm mb-3">
+                    <strong>Achado:</strong> 33% dos casos confirmados ocorrem em crianças de 0-1 ano (6 casos).
+                  </p>
+                  <p className="text-red-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-red-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Intensificar campanhas de vacinação meningocócica em menores de 2 anos</li>
+                    <li>Reforçar orientação aos pais sobre sinais de alerta</li>
+                    <li>Garantir acesso à vacina meningocócica conjugada (MenC)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Alerta 2: Predominância Masculina */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">👥</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-blue-900 mb-2">Predominância Masculina</h3>
+                  <p className="text-blue-800 text-sm mb-3">
+                    <strong>Achado:</strong> 57,9% dos casos são em homens vs 42,1% em mulheres.
+                  </p>
+                  <p className="text-blue-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-blue-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Investigar fatores de risco específicos em população masculina</li>
+                    <li>Fortalecer campanhas direcionadas a homens jovens e adolescentes</li>
+                    <li>Monitorar tendências epidemiológicas por gênero</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Alerta 3: Concentração Geográfica */}
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border-l-4 border-orange-600 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">📍</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-orange-900 mb-2">Concentração Geográfica</h3>
+                  <p className="text-orange-800 text-sm mb-3">
+                    <strong>Achado:</strong> 55,6% dos casos na região Metropolitana (10 casos).
+                  </p>
+                  <p className="text-orange-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-orange-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Intensificar vigilância epidemiológica na região Metropolitana</li>
+                    <li>Reforçar capacitação de profissionais de saúde para detecção precoce</li>
+                    <li>Implementar medidas de controle de infecção em serviços de saúde</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Alerta 4: Etiologia Bacteriana */}
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">🦠</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-purple-900 mb-2">Predominância de Meningite Bacteriana</h3>
+                  <p className="text-purple-800 text-sm mb-3">
+                    <strong>Achado:</strong> 83% dos casos são bacterianos (15 casos), com taxa de mortalidade de 11,1%.
+                  </p>
+                  <p className="text-purple-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-purple-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Garantir acesso rápido a antibióticos apropriados</li>
+                    <li>Reforçar protocolos de manejo clínico de meningite bacteriana</li>
+                    <li>Implementar quimioprofilaxia para contatos de casos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Alerta 5: Perfil Étnico-Racial */}
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">🌍</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-yellow-900 mb-2">Predominância de População Parda</h3>
+                  <p className="text-yellow-800 text-sm mb-3">
+                    <strong>Achado:</strong> 89,5% dos casos em indivíduos pardos, refletindo perfil populacional.
+                  </p>
+                  <p className="text-yellow-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-yellow-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Assegurar equidade no acesso a vacinas e tratamentos</li>
+                    <li>Monitorar possíveis disparidades no acesso à saúde</li>
+                    <li>Reforçar campanhas em comunidades vulneráveis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Alerta 6: Taxa de Mortalidade */}
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-700 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="text-2xl">⚠️</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-red-900 mb-2">Taxa de Mortalidade Elevada</h3>
+                  <p className="text-red-800 text-sm mb-3">
+                    <strong>Achado:</strong> 11,1% de taxa de mortalidade (2 óbitos em 18 confirmados).
+                  </p>
+                  <p className="text-red-800 text-sm font-semibold">Recomendação:</p>
+                  <ul className="text-red-800 text-sm list-disc list-inside mt-2 space-y-1">
+                    <li>Revisar protocolos de manejo clínico e terapia antimicrobiana</li>
+                    <li>Reforçar capacitação em diagnóstico precoce</li>
+                    <li>Realizar auditorias de óbitos para identificação de oportunidades de melhoria</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-blue-900 text-sm">
+              <strong>Nota Importante:</strong> Essas recomendações devem ser implementadas em coordenação com as autoridades de saúde pública estaduais e municipais, considerando a capacidade operacional e recursos disponíveis. O monitoramento contínuo é essencial para avaliar a efetividade das intervenções.
+            </p>
+          </div>
+        </div>
+
         {/* Glossário */}
         <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Glossário de Siglas Epidemiológicas</h2>

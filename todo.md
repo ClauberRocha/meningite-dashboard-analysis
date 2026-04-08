@@ -28,6 +28,7 @@
 - [x] Ajustados valores de sexo e raça/cor para refletir novo total de 19 casos
 - [x] Adicionado card informativo abaixo do gráfico Por Sexo (cor #EEF6FE)
 - [x] Adicionado card informativo abaixo do gráfico Por Raça/Cor (cor #FFFBEC)
+- [x] Criada seção de Alertas e Recomendações de Saúde Pública com 6 alertas principais
 
 ## Arquivos Modificados
 
