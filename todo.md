@@ -32,6 +32,7 @@
 - [x] Adicionado texto descritivo ao cabeçalho do informe
 - [x] Adicionadas informações de data e fonte ao cabeçalho
 - [x] Atualizada fonte no cabeçalho para incluir /SES/MA / Secretaria de Saúde
+- [x] Removida informação de fonte do rodápé do informe
 
 ## Arquivos Modificados
 

@@ -759,7 +759,7 @@ export default function Home() {
         {/* Rodapé */}
         <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-600 text-sm">
           <p className="font-semibold mb-2">Dashboard de Vigilância Epidemiológica - Meningite 2026</p>
-          <p className="mt-2">Fonte: SINAN/SES/MA - <strong>Raimundo Expedito - RT pelo monitoramento das meningites</strong> / SES-MA</p>
+          <p className="mt-2"><strong>Raimundo Expedito - RT pelo monitoramento das meningites</strong></p>
         </div>
       </div>
     </div>
