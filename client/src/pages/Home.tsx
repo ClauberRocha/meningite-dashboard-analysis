@@ -6,7 +6,7 @@ import {
   CasesByMonthChart,
   WeeklyEpidemicChart,
 } from "@/components/Charts";
-import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, BarChart, Bar, CartesianGrid, XAxis, YAxis } from "recharts";
+import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, BarChart, Bar, CartesianGrid, XAxis, YAxis, LineChart, Line, Legend } from "recharts";
 
 export default function Home() {
   const [startWeek, setStartWeek] = useState("1");
@@ -605,6 +605,40 @@ export default function Home() {
               </div>
             );
           })()}
+        </div>
+
+        {/* Gráfico de Cobertura Vacinal */}
+        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Cobertura Vacinal de Rotina (2020-2025)</h2>
+          <p className="text-gray-600 text-sm mb-6">Evolução da cobertura vacinal para principais vacinas do calendário infantil</p>
+          <div className="w-full h-96 bg-gray-50 rounded-lg p-4">
+            <LineChart width={1000} height={350} data={[
+              { ano: '2020', 'BCG (META 90%)': 18.98, 'Hepatite B': 16.51, 'Hepatite B (< 1 ano)': 35.80, 'DTP': 58.03, 'FA (< 1 ano)': 32.61, 'Poliomielite VIP': 38.02, 'Pneumocócica (< 1 ano)': 43.25, 'Pentavalente': 35.80, 'Rotavírus': 39.79, 'Hepatite A': 35.42, 'DTP (1º reforço)': 30.9, 'Tríplice Viral': 45.89, 'Tríplice Viral D2': 21.82, 'Pneumocócica (1º reforço)': 40.1, 'Polio (Reforço)': 33.91, 'Varicela': 32.48, 'Meningocócica (< 1 ano)': 39.02, 'DTP Adulto': 27.78 },
+              { ano: '2021', 'BCG (META 90%)': 30.73, 'Hepatite B': 26.71, 'Hepatite B (< 1 ano)': 47.50, 'DTP': 48.65, 'FA (< 1 ano)': 40.98, 'Poliomielite VIP': 47.61, 'Pneumocócica (< 1 ano)': 52.62, 'Pentavalente': 47.50, 'Rotavírus': 49.41, 'Hepatite A': 43.33, 'DTP (1º reforço)': 43.08, 'Tríplice Viral': 53.87, 'Tríplice Viral D2': 25.64, 'Pneumocócica (1º reforço)': 50.9, 'Polio (Reforço)': 40.35, 'Varicela': 42.01, 'Meningocócica (< 1 ano)': 50.99, 'DTP Adulto': 39.43 },
+              { ano: '2022', 'BCG (META 90%)': 75.04, 'Hepatite B': 64.17, 'Hepatite B (< 1 ano)': 56.30, 'DTP': 56.3, 'FA (< 1 ano)': 46.50, 'Poliomielite VIP': 57.13, 'Pneumocócica (< 1 ano)': 63.48, 'Pentavalente': 56.30, 'Rotavírus': 59.12, 'Hepatite A': 47.17, 'DTP (1º reforço)': 44.94, 'Tríplice Viral': 58.27, 'Tríplice Viral D2': 31.97, 'Pneumocócica (1º reforço)': 55.9, 'Polio (Reforço)': 43.57, 'Varicela': 52.01, 'Meningocócica (< 1 ano)': 55.27, 'DTP Adulto': 48.01 },
+              { ano: '2023', 'BCG (META 90%)': 75.08, 'Hepatite B': 73.51, 'Hepatite B (< 1 ano)': 72.73, 'DTP': 72.75, 'FA (< 1 ano)': 63.14, 'Poliomielite VIP': 72.82, 'Pneumocócica (< 1 ano)': 78.47, 'Pentavalente': 72.69, 'Rotavírus': 75.44, 'Hepatite A': 71.04, 'DTP (1º reforço)': 64.38, 'Tríplice Viral': 70.94, 'Tríplice Viral D2': 41.77, 'Pneumocócica (1º reforço)': 73, 'Polio (Reforço)': 62.58, 'Varicela': 56.60, 'Meningocócica (< 1 ano)': 76.07, 'DTP Adulto': 73.34 },
+              { ano: '2024', 'BCG (META 90%)': 80.43, 'Hepatite B': 78.37, 'Hepatite B (< 1 ano)': 78.05, 'DTP': 78.1, 'FA (< 1 ano)': 57.02, 'Poliomielite VIP': 78.28, 'Pneumocócica (< 1 ano)': 86.45, 'Pentavalente': 78.05, 'Rotavírus': 82.67, 'Hepatite A': 79.85, 'DTP (1º reforço)': 78.82, 'Tríplice Viral': 85.11, 'Tríplice Viral D2': 54.59, 'Pneumocócica (1º reforço)': 87.79, 'Polio (Reforço)': 79.61, 'Varicela': 59.19, 'Meningocócica (< 1 ano)': 85.03, 'DTP Adulto': 84.45 },
+              { ano: '2025', 'BCG (META 90%)': 90.81, 'Hepatite B': 90.99, 'Hepatite B (< 1 ano)': 85.36, 'DTP': 85.49, 'FA (< 1 ano)': 68.06, 'Poliomielite VIP': 82.03, 'Pneumocócica (< 1 ano)': 90.06, 'Pentavalente': 83.58, 'Rotavírus': 85.28, 'Hepatite A': 78.96, 'DTP (1º reforço)': 82.95, 'Tríplice Viral': 90.07, 'Tríplice Viral D2': 72.49, 'Pneumocócica (1º reforço)': 87.03, 'Polio (Reforço)': 83.75, 'Varicela': 71.40, 'Meningocócica (< 1 ano)': 87.39, 'DTP Adulto': 100.0 }
+            ]} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="ano" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Line type="monotone" dataKey="BCG (META 90%)" stroke="#ef4444" strokeWidth={2} />
+              <Line type="monotone" dataKey="Hepatite B" stroke="#f97316" strokeWidth={2} />
+              <Line type="monotone" dataKey="DTP" stroke="#eab308" strokeWidth={2} />
+              <Line type="monotone" dataKey="Poliomielite VIP" stroke="#22c55e" strokeWidth={2} />
+              <Line type="monotone" dataKey="Pneumocócica (< 1 ano)" stroke="#06b6d4" strokeWidth={2} />
+              <Line type="monotone" dataKey="Tríplice Viral" stroke="#8b5cf6" strokeWidth={2} />
+              <Line type="monotone" dataKey="DTP Adulto" stroke="#ec4899" strokeWidth={2} />
+            </LineChart>
+          </div>
+          <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-blue-900 text-sm">
+              <strong>Nota:</strong> O gráfico apresenta a evolução da cobertura vacinal de 2020 a 2025. Observe o aumento significativo nas coberturas a partir de 2022, refletindo melhoria na capacidade de execução do Programa Nacional de Imunizações (PNI). As metas de cobertura (90% para maioria das vacinas) ainda não foram atingidas em algumas vacinas, indicando necessidade de intensificação das estratégias de imunização.
+            </p>
+          </div>
         </div>
 
         {/* Seção de Alertas e Recomendações */}

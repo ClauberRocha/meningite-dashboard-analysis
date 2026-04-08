@@ -34,6 +34,7 @@
 - [x] Atualizada fonte no cabeçalho para incluir /SES/MA / Secretaria de Saúde
 - [x] Removida informação de fonte do rodápé do informe
 - [x] Adicionado efeito de elevação (hover) nos cards de alertas
+- [x] Criado gráfico de linhas de Cobertura Vacinal de Rotina (2020-2025) abaixo do filtro de semana epidemiológica
 
 ## Arquivos Modificados
 
