@@ -25,7 +25,7 @@ export default function Home() {
         <p className="text-sm mb-2">SE 01 a SE 13 (05/01/2026 a 04/04/2026)</p>
         <div className="flex justify-center gap-6 text-xs mt-4 pt-4 border-t border-blue-700">
           <span><strong>Dados atualizados:</strong> Abril 2026</span>
-          <span><strong>Fonte:</strong> SINAN / Secretaria de Saúde</span>
+          <span><strong>Fonte:</strong> SINAN /SES/MA / Secretaria de Saúde</span>
         </div>
       </div>
 

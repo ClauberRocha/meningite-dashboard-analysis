@@ -31,6 +31,7 @@
 - [x] Criada seção de Alertas e Recomendações de Saúde Pública com 6 alertas principais
 - [x] Adicionado texto descritivo ao cabeçalho do informe
 - [x] Adicionadas informações de data e fonte ao cabeçalho
+- [x] Atualizada fonte no cabeçalho para incluir /SES/MA / Secretaria de Saúde
 
 ## Arquivos Modificados
 
