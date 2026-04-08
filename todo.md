@@ -29,6 +29,8 @@
 - [x] Adicionado card informativo abaixo do gráfico Por Sexo (cor #EEF6FE)
 - [x] Adicionado card informativo abaixo do gráfico Por Raça/Cor (cor #FFFBEC)
 - [x] Criada seção de Alertas e Recomendações de Saúde Pública com 6 alertas principais
+- [x] Adicionado texto descritivo ao cabeçalho do informe
+- [x] Adicionadas informações de data e fonte ao cabeçalho
 
 ## Arquivos Modificados
 

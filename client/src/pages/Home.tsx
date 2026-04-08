@@ -21,8 +21,12 @@ export default function Home() {
       <div className="bg-blue-900 text-white p-8 mb-8 text-center">
         <h1 className="text-4xl font-bold mb-2">Informe Semanal</h1>
         <p className="text-lg mb-4">Vigilância das Doenças Imunopreviniáveis - Meningite</p>
-        <p className="text-sm mb-6">SE 01 a SE 13 (05/01/2026 a 04/04/2026)</p>
-
+        <p className="text-sm mb-4">Vigilância epidemiológica de casos de meningite no Maranhão com análise demográfica, distribuição geográfica e recomendações de saúde pública.</p>
+        <p className="text-sm mb-2">SE 01 a SE 13 (05/01/2026 a 04/04/2026)</p>
+        <div className="flex justify-center gap-6 text-xs mt-4 pt-4 border-t border-blue-700">
+          <span><strong>Dados atualizados:</strong> Abril 2026</span>
+          <span><strong>Fonte:</strong> SINAN / Secretaria de Saúde</span>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 pb-12">
