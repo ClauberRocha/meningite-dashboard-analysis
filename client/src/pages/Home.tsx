@@ -612,7 +612,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Alertas e Recomendações de Saúde Pública</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Alerta 1: Faixa Etária */}
-            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-600 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-600 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">🚨</div>
                 <div>
@@ -631,7 +631,7 @@ export default function Home() {
             </div>
 
             {/* Alerta 2: Predominância Masculina */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">👥</div>
                 <div>
@@ -650,7 +650,7 @@ export default function Home() {
             </div>
 
             {/* Alerta 3: Concentração Geográfica */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border-l-4 border-orange-600 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 border-l-4 border-orange-600 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">📍</div>
                 <div>
@@ -669,7 +669,7 @@ export default function Home() {
             </div>
 
             {/* Alerta 4: Etiologia Bacteriana */}
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">🦠</div>
                 <div>
@@ -688,7 +688,7 @@ export default function Home() {
             </div>
 
             {/* Alerta 5: Perfil Étnico-Racial */}
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">🌍</div>
                 <div>
@@ -707,7 +707,7 @@ export default function Home() {
             </div>
 
             {/* Alerta 6: Taxa de Mortalidade */}
-            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-700 p-5 rounded-lg">
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-l-4 border-red-700 p-5 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
               <div className="flex items-start gap-3">
                 <div className="text-2xl">⚠️</div>
                 <div>

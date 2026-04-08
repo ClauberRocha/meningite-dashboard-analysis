@@ -33,6 +33,7 @@
 - [x] Adicionadas informações de data e fonte ao cabeçalho
 - [x] Atualizada fonte no cabeçalho para incluir /SES/MA / Secretaria de Saúde
 - [x] Removida informação de fonte do rodápé do informe
+- [x] Adicionado efeito de elevação (hover) nos cards de alertas
 
 ## Arquivos Modificados
 
